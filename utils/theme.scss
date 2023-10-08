@@ -1,0 +1,122 @@
+/* theme color light and dark shade */
+
+$dark: #181818;
+$dark-lite: #232323;
+
+/* acccent color */
+
+$reda: #EF0173;
+
+/*/font family
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+
+
+*/
+
+.font-color{
+    color: $reda;
+}
+
+.header-font-size{
+    font-size: 3.3rem;
+}
+
+
+.headings{
+    color: white;
+    display: inline-block;
+    padding-left:  1rem;
+    padding-right:  1rem;
+    padding-bottom:  2px;
+    padding-top: 2px;
+    border-bottom: solid 5px $reda;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.smol-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $dark-lite;
+    padding: 1.3rem;
+    border-left: $reda solid 5px;
+    margin: 1rem;
+
+    .smol-logo{
+        background-color: #ef01742c;
+        border-radius: 5px;
+        margin-right: 1rem;
+        i{
+            font-size: 3rem;
+            color: $reda;
+            padding:1rem;
+        }
+    }
+
+    .smol-para{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1{
+            font-size: 1rem;
+            color: white;
+            font-weight: 700;
+        }
+        p{
+            color: white;
+            font-weight: 200;
+        }
+    }
+
+}
+
+.nonee{
+    display: none;
+}
+
+.appear{
+
+    transition: 0.6s;
+    .mynavi{
+
+        display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+    transition: 0.6s;
+    .logo{
+        img{
+            height: 3rem;
+        }
+        margin-right: auto;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 70.993889rem;
+        align-items: center;
+        a{
+            padding-left: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            color: white;
+            transition: 0.6s;
+        }
+        
+        a:hover{
+            color: $reda;
+            transition: 0.6s;
+        }
+    }
+    }
+}
